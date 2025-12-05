@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS quiz UI</title>
+    <style>
+        body {
+
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .quiz-container {
+
+            background: #fff;
+            width: 400px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: #333;
+        }
+
+        .quiz-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .question {
+
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .question {
+            list-style: none;
+            padding: 0;
+        }
+
+        .question li {
+            margin: 10px 0;
+        }
+
+        .question input {
+            display: none;
+        }
+
+        .question label {
+
+            display: block;
+            padding: 10px 15px;
+            background: #f1f1f1;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3 ease;
+        }
+
+        .options input  :checked + label {
+            background: #667eea;
+            color: #fff;
+            box-shadow: 0 0 8px rgba(102,126,234,0.8);
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background: #764ba2;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3;
+
+        }
+
+        .submit-btn:hover {
+            background: #667eea;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="quiz-container">
+    <h2>Mini Quiz</h2>
+
+    <div class="question">1. what does html stand for?</div>
+        <ul class="options">
+            <li><input type="radio" id="qla" name="q1">
+            <label for="q1a">Hyper text makeup lanuage</label></li>
+            <li><input type="radio" id="q1b" name="q1">
+            <label for="q1b">hyoer text markup language></label></li>
+            <li><input type="radio" id="q1c" name="q1">
+            <label for="q1c">home tool markup language</label></li>
+        </ul>
+
+        <div class="question">2. which css property changestext color ?</div>
+            <ul class="options">
+                <li><input type="radio" id="q2a" name="q2">
+                    <label for="q2a">font-style</label></li>
+                <li><input type="radio" id="q2b" name="q2">
+                    <label for="q2b">color</label></li>
+                <li><input type="radio" id="q2c" name="q2">
+                    <label for="q2c">text-decoration</label></li>
+            </ul>
+
+            <div class="question">3. what does css stand for?</div>
+                <ul class="option">
+                    <li><input type="radio" id="q3a" name="q3">
+                        <label for="q3a">creative style sheets</label></li>
+                    <li><input type="radio" id="q3b" name="q3">
+                        <label for="q3b">computer style sheets</label></li>
+                    <li><input type="radio" id="q3c" name="q3">
+                        <label for="q3c">cascading style sheets</label></li>
+                </ul>
+
+                <button class="submit-btn">Submit Quiz</button>
+            
+
+
+        
+
+
+
+
+
+    </div>
+
+    
+    
+</body>
+</html> 

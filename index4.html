@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QTrip</title>
+    <style>
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    position: relative;
+}
+
+body{
+    overflow-y: auto;
+    min-height: 100vh;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+footer {
+    background: #f1f1f1;
+    width: 100%;
+    padding: 16px 0px;
+    color: #999;
+    vertical-align: bottom;
+    margin-top: 40px;
+    text-align: center;
+    /* width: 100%; */
+   /* height: 2.5rem; */
+
+}
+
+.banner {
+    height: 500px;
+    width: 100%;
+    background: #999;
+    margin: 20px 0px;
+}
+
+.content {
+    padding: 20px 0px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+
+
+/* ========================================== */
+/* Layout page css */
+/* ========================================== */
+
+.tile {
+    /* TODO: MODULE_CLASS */
+    /* 1. fill in the reqired properties. */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.tile img {
+    /* todo : module_cards */
+    /* 1. fill in the required properties. */
+    height: 400px;
+    width: 350px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.tille img:hover {
+    /* todo: modul_cards */
+    /* 1. fill in the required properties. */
+    transform: scale(1.2);
+    filter: brightness(0.4);
+
+}
+
+/* hint: notice the position:absolute and z-index properties. */
+/* think about how those in relation to the existing "tile" classes. */
+
+.tile-text {
+    position: absolute;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    bottom: 0;
+    color: white;
+}
+
+
+.hero-image {
+    /* use "liner-gradient" to add a draken background effect to the image. this will make the text easie to read */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("https://wallpapers.com/images/hd/travel-hd-axhrsecphqby11wk.jpg");
+    height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.hero-subheading {
+    font-size: 24px;
+    font-weight: 100;
+    color: white;
+}
+
+.hero-input {
+    width: 40%;
+    height: 10px;
+    padding: 16px;
+    border-radius: 8px;
+
+}
+
+.nav-link {
+    margin-right: 36px;
+}
+
+.experience-content ul li {
+    margin-left: 16px;
+    padding: 0;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    
+
+<!- - TODO MODULE_LAYOUT - ->
+<! - - 1. USE APPROPRIATE CSS CLASS ON NAV ELEMENT. - ->
+<! - - 2. ADD CHILD ELEMENT AS REQUIRED. - - >
+
+<nav class="navbar navbar-light navbar-expand-ig">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">QTrip</a>
+
+
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarItems">
+
+        <span class="navbar-toggle-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse justify-content-end" id="navbarItems">
+            <ul class="navbar-nav">
+                <li class="navbar-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/adventures/index.html" class="nav-link">Explore</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!- - TODO MODULE_LAYOUT - - >
+<!- - 1. IS APPROPRIATE CSS CLASSES ON THE HERO IMAGE CONTAINER ELEMENT- - >
+<!- - 2. ADD CHILD ELEMENT AS REQUIRED - - >
+
+
+<div class="hero-image d-flex flex-column justify-content-centeralign-items-center">
+
+    <h2 class="text-white">Welcome to QTrip</h2>
+
+        <p class="hero-subheading">
+            Explore the World with fantastic places to venture around 
+        </p>
+        <input class="hero-input" type="text" placeholder="Search a City"/>
+
+</div>
+
+<div class="container mt-4">
+
+    <!- - TODO: MODULE_LAOUT - - >
+    <! - - 1. CREATE THE GRID LIKELAYOUT AS REQUIRED. - ->
+    
+    <div class="row">
+
+        <div class="col-sm-6 col-lg-3 mb-4">
+            <a href="#">
+                <div class="tile">
+                    <img class="img-fluid" src="https://swarajya.gumlet.io/swarajya/2018-11/c25b8868-ff09-4ded-955a-c41c19f15c96/feature.png?w=310&q=50&compress=true&format=auto" alt=""/>
+                    <div class="tile.text">
+                        <p>Bengaluru</p>
+                        <p>100+ Places</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-sm6 col-lg-3 mb-4">
+            <a href="#">
+                <div class="tile">
+                    <img class="img-fluid" src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTDLH_e1-0m-pVyRx0Z5Tb-dP1OI92EsEvVnmpJ3tqK62tQihjQbqXd5n5NW_pScARehCJs0zC7vtzahX17Kkq0xyMO1XN-S4pUWDU-Hw" alt=""/>
+                    <div class="tile-text">
+                        <p>Kolkata</p>
+                        <p>100+ Places</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="col-sm-6 col-lg-3 mb-4">
+            <a href="#">
+                <div class="tile">
+                    <img class="img-fluid" src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcT3D8FVbnHXx3AyXasHIP9kgpttazxT_MnAEQpS2eiPXsFQygyOEclbVDMKjEwiA6KYuhc_jA3hYSwtNWtKz735ez6V6GMxD1sq3uF-VLc" alt=""/>
+                    <div class="tile-text">
+                        <p>Mumbai</p>
+                        <p>100+ places</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+
+     <div class="row">
+        <div class="col-sm-6 col-lg-3 mb-4">
+        <a href="#">
+            <div class="tile">
+                <img class="img-fluid" src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcRRKpcbvLNGB1llQP0Dng8K-tAVrMPYKzZmBT0_kqsGseXyDhb9l00tPClBkHpThfgKEFZtjCfW44cWJn5wLWpXFzBno9XVYVa2-wQXZg" alt=""/>
+                <div class="tile-text">
+                    <p>Singapore</p>
+                    <p>100+ places</p>
+                </div>
+            </div>
+        </a>
+     </div>
+
+     <div class="col-sm-6 col-lg-3 mb-4">
+        <a href="#">
+            <div class="tile">
+                <img class="img-fluid" src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqAs4Hd0GX7PMDruMo19y5yXCJB1-wq04vqxpL6dIzHwtlKIKtDDlH6CqsVfF5D-00ZF0SFFA6XYfloyYqZqDMe0emTk61Jz3PizYCEr-48FyK0Rj69mT9s_ZyGFqs3-J3q9oY=w675-h390-n-k-no" alt=""/>
+                <div class="tile-text">
+                    <p>Dubai</p>
+                    <p>100+ Places</p>
+                </div>
+            </div>
+        </a>
+     </div>
+
+
+     <div class="col-sm-6 col-lg-3 mb-4">
+        <a href="#">
+            <div class="tile">
+                <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRI0xuIaUO1cATQnVk5vMQnirwjARR56UqiwcBMdHpNsAkx1GA2sFWIVw9Q9aVgL8W15jjIm7QF78DZTvY9aQTvgI3F35hCJoREi-7YKA" alt=""/>
+                <div class="tile-text">
+                    <p>Malaysia</p>
+                    <p>100+ Places</p>
+                </div>
+            </div>
+        </a>
+     </div>
+
+
+     <div class="col-sm-6 col-lg-3 mb-4">
+        <a href="#">
+            <div class="tile">
+                <img class="img-fluid" src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSup4FxP54mRgNEtJRjXQOt0GwCf2Wjh-gysqkAy12T5eQCYnwSqDAGwo3HUvId31uQ5t3ZIGLGFDGePQJS-uWv4mpRC1v4ywhX8IPecg" alt=""/>
+                <div class="tile-text">
+                    <p>Paris</p>
+                    <p>100+ Places</p>
+                </div>
+            </div>
+        </div>
+        </a>
+
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="container">(c) QTrip 2020</div>
+</footer>
+
+
+<!-- TODO: MODULE_LAYOUT -->
+ <!-- Add scripts needed for bootstrap to work -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

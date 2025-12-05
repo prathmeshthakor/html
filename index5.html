@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Explorer</title>
+ <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('https://img.freepik.com/premium-photo/travel-accessories-blue-knitted-background-travel-concept-top-view_2221-29.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  color: rgb(30, 18, 18);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav h1 {
+  font-size: 28px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-content {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #ff6b6b;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+/* Destinations Section */
+.destinations {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.destinations h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background-color: rgb(240, 236, 236);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.card p {
+  padding: 0 15px 20px;
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+ </style>
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <h1>Travel Explorer</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h2>Explore the World</h2>
+      <p>Discover your next great adventure, become an explorer!</p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </header>
+
+  <section class="destinations">
+    <h2>Popular Destinations</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSLbkpzP32HbmXuipIcZj4h6VxIdRO2wlhMPKA7o5uRwu3XN_hpbtCxBOx0KpZeCqH_7s90-K8JsNO5zI-c5BSx2B7QMw5UTPxMA_3jPA" alt="Paris" />
+        <h3>Paris</h3>
+        <p>The City of Light awaits you with art, fashion, and romance.</p>
+      </div>
+
+
+      <div class="card">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqQyW3xg66knK23F7FTy_TCvBjWF4NEhBZrLAAW3c1h0mZW4077kfy267prfq3ZHpouRiHCXWgCwRdQFj852paaPz94dzGZMy6J5BzWoNbURotV9N55-6UWIfTAEr-0QBhytkig=w675-h390-n-k-no" alt="Bali" />
+        <h3>Bali</h3>
+        <p>Relax on the tropical beaches and explore ancient temples.</p>
+      </div>
+
+      
+      <div class="card">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrrRD7ZrLqNbR-WbCEYRWYG33U6c1KKOR38CNzk6Qq8OVhO218LCHkQeu9JFeybPhpWXok2AG-wEPyqNqkjW3DXVvwK_t202bMdo5OKxuAUHMz99ycfQU4ceTPoQwVd23D2No5jIA=w675-h390-n-k-no" alt="New York" />
+        <h3>New York</h3>
+        <p>Experience the fast-paced life and skyline of NYC.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+  </footer>
+</body>
+</html>
